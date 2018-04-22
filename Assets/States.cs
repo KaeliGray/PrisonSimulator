@@ -20,5 +20,6 @@
     beaten,
     kill,
     injuries,
-    death
+    death,
+    death_by_hanging
 }
