@@ -168,7 +168,7 @@ public class TextController : MonoBehaviour
             "You took your own way out." + "\n\n Press Space to start over.",
             new List<Action>()
             {
-                new Action(KeyCode.Space, States.cell)
+                new Action(KeyCode.Space, States.death_by_hanging)
             }
         ),
        new State(
@@ -224,7 +224,14 @@ public class TextController : MonoBehaviour
                 new Action(KeyCode.Space, States.cell),
             }
         ),
-
+        new State(
+            States.death_by_hanging,
+            "You're ded, real ded" + "\n\n Press Space to start over.",
+            new List<Action>()
+            {
+                new Action(KeyCode.Space, States.cell),
+            }
+        )
     };
 
     private States myState;
